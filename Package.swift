@@ -2,10 +2,8 @@ import PackageDescription
 
 let package = Package(
     name: "Swiftly",
-    targets:[
-      Target(
-        name: "main"
-      )
+    dependencies: [
+        .Package(url: "../SwiftIO", majorVersion: 1)
     ]
 
 )
